@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="webinterface.pov" name="POV Web" version="1.0.0" provider-name="kodi-config">
+    <requires>
+        <import addon="xbmc.json" version="6.0.0"/>
+    </requires>
+    <extension point="xbmc.webinterface"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Web interface for POV</summary>
+        <description lang="en_GB">Browse and control POV remotely via web browser.</description>
+        <platform>all</platform>
+        <language>en</language>
+    </extension>
+</addon>
