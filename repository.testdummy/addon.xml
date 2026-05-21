@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.testdummy" name="Test Dummy Repo" version="1.0.0" provider-name="kodi-config">
+    <extension point="xbmc.addon.repository" name="Test Dummy Repo">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/schabilly/kodi-test-repo/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/schabilly/kodi-test-repo/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/schabilly/kodi-test-repo/main/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Test repository for integration testing</summary>
+        <description lang="en_GB">Minimal repository used by test suite. Not a real repo.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
