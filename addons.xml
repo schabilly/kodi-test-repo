@@ -1,28 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <addons>
-<addon id="repository.testdummy" name="Test Dummy Repo" version="1.0.0" provider-name="kodi-config">
-    <extension point="xbmc.addon.repository" name="Test Dummy Repo">
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/schabilly/kodi-test-repo/main/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/schabilly/kodi-test-repo/main/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/schabilly/kodi-test-repo/main/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Test repository for integration testing</summary>
-        <description lang="en_GB">Minimal repository used by test suite. Not a real repo.</description>
-        <platform>all</platform>
-    </extension>
-</addon>
 <addon id="plugin.video.testdummy" name="Test Dummy" version="1.0.0" provider-name="kodi-config">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-    </requires>
-    <extension point="xbmc.python.script" library="default.py"/>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en_GB">Test dummy addon</summary>
-        <description lang="en_GB">Minimal addon for integration testing. Safe to install and remove.</description>
-        <platform>all</platform>
-    </extension>
+<requires>
+<import addon="xbmc.python" version="3.0.0" />
+</requires>
+<extension point="xbmc.python.script" library="default.py" />
+<extension point="xbmc.addon.metadata">
+<summary lang="en_GB">Test dummy addon</summary>
+<description lang="en_GB">Minimal addon for integration testing. Safe to install and remove.</description>
+<platform>all</platform>
+</extension>
+</addon>
+<addon id="repository.kodi-addons" name="Kodi Addons Repository" version="1.0.0" provider-name="kodi-config">
+<extension point="xbmc.addon.repository" name="Kodi Addons Repository">
+<dir>
+<info compressed="false">https://raw.githubusercontent.com/schabilly/kodi-addons/main/addons.xml</info>
+<checksum>https://raw.githubusercontent.com/schabilly/kodi-addons/main/addons.xml.md5</checksum>
+<datadir zip="true">https://raw.githubusercontent.com/schabilly/kodi-addons/main/</datadir>
+</dir>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary lang="en_GB">Personal Kodi addon repository</summary>
+<description lang="en_GB">Hosts custom Kodi addons including the POV Web Interface.</description>
+<platform>all</platform>
+</extension>
+</addon>
+<addon id="webinterface.pov" name="POV Web" version="1.0.0" provider-name="kodi-config">
+<requires>
+<import addon="xbmc.json" version="6.0.0" />
+</requires>
+<extension point="xbmc.webinterface" />
+<extension point="xbmc.addon.metadata">
+<summary lang="en_GB">Web interface for POV</summary>
+<description lang="en_GB">Browse and control POV remotely via web browser.</description>
+<platform>all</platform>
+<language>en</language>
+</extension>
 </addon>
 </addons>

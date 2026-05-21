@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="repository.kodi-addons" name="Kodi Addons Repository" version="1.0.0" provider-name="kodi-config">
+    <extension point="xbmc.addon.repository" name="Kodi Addons Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/schabilly/kodi-addons/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/schabilly/kodi-addons/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/schabilly/kodi-addons/main/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Personal Kodi addon repository</summary>
+        <description lang="en_GB">Hosts custom Kodi addons including the POV Web Interface.</description>
+        <platform>all</platform>
+    </extension>
+</addon>
